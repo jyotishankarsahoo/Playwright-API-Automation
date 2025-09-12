@@ -4,7 +4,7 @@ import { expect, test } from "@playwright/test";
   To install Faker, use the following command:
    `npm install @faker-js/faker --save-dev`
 */
-import { faker } from "@faker-js/faker"
+import { faker } from "@faker-js/faker";
 
 /*
   Luxon is a powerful date and time library for JavaScript.
@@ -12,13 +12,11 @@ import { faker } from "@faker-js/faker"
    `npm install --save luxon`
 */
 
-import { DateTime } from "luxon"
+import { DateTime } from "luxon";
 
-const bookingAPIRequestBody = require("../test-data/postAPIRequestBodyStatic.json");
-
-test("Post API - With Dynamic Request Body", async ({ request}) => {
+test("Post API - With Dynamic Request Body", async ({ request }) => {
   // Create Dynamic Test Data
-  const firstName = faker.person.firstName()
+  const firstName = faker.person.firstName();
   const lastName = faker.person.lastName();
   const totalprice = faker.number.int(1000);
 
