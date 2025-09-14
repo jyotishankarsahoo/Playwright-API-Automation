@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tests": "npx playwright test"
+    "tests": "npx playwright test",
+    "tests:specific": "npx playwright test --grep getRequestWithPathAndQueryParam.spec.js", 
+    "show:report": "npx playwright show-report"
   },
   "keywords": [],
   "author": "",
